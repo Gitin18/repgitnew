@@ -6,11 +6,11 @@ def are_coprime(a, b):
 # Request two integers from the user
 num1 = int(input("Enter the first integer: "))
 num2 = int(input("Enter the second integer: "))
-
+gcd_value = math.gcd(num1, num2)
 # Check if the numbers are coprime
 if are_coprime(num1, num2):
     print(f"{num1} and {num2} are coprime.")
 else:
-    print(f"{num1} and {num2} are not coprime.")
+    print(f"{num1} and {num2} are not coprime. Their greatest common divisor is {gcd_value}.")
 
 
