@@ -4,7 +4,6 @@ def gcd_three_numbers(a, b, c):
     # Calculate the GCD of the first two numbers, then calculate the GCD of that result with the third number
     return math.gcd(math.gcd(a, b), c)
 
-# Request three integers from the user
 num1 = int(input("Enter the first integer: "))
 num2 = int(input("Enter the second integer: "))
 num3 = int(input("Enter the third integer: "))
