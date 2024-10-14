@@ -1,2 +1,16 @@
-a=1
-b=3
+import math
+
+def are_coprime(a, b):
+    return math.gcd(a, b) == 1
+
+# Request two integers from the user
+num1 = int(input("Enter the first integer: "))
+num2 = int(input("Enter the second integer: "))
+
+# Check if the numbers are coprime
+if are_coprime(num1, num2):
+    print(f"{num1} and {num2} are coprime.")
+else:
+    print(f"{num1} and {num2} are not coprime.")
+
+
